@@ -1400,7 +1400,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28e45b34-8eae-4eed-a468-a9ea482506c9")
-		(property "Reference" "C1"
+		(property "Reference" "C34"
 			(at 175.26 96.5199 0)
 			(effects
 				(font
@@ -1454,7 +1454,7 @@
 		(instances
 			(project ""
 				(path "/400c1603-202c-4359-a830-d2f0d06dd3ce/a4c77a59-a27d-4681-b324-24cee2a545f5"
-					(reference "C1")
+					(reference "C34")
 					(unit 1)
 				)
 			)
