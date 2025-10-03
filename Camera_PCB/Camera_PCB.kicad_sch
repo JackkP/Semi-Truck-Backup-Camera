@@ -2788,6 +2788,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 82.55) (xy 172.72 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c0c98e6-875d-4d66-89a7-c6632b8642cb")
+	)
+	(wire
+		(pts
 			(xy 172.72 142.24) (xy 172.72 144.78)
 		)
 		(stroke
@@ -2998,6 +3008,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 87.63) (xy 172.72 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57eb00e7-b099-4197-bd23-7efb3ce6be8c")
+	)
+	(wire
+		(pts
 			(xy 147.32 167.64) (xy 147.32 170.18)
 		)
 		(stroke
@@ -3018,6 +3038,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 92.71) (xy 172.72 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "664508b1-9312-4c16-ae41-a346b37889f8")
+	)
+	(wire
+		(pts
 			(xy 101.6 26.67) (xy 101.6 29.21)
 		)
 		(stroke
@@ -3025,6 +3055,26 @@
 			(type default)
 		)
 		(uuid "6977b05b-b8cc-4bfb-a928-224d2715efa4")
+	)
+	(wire
+		(pts
+			(xy 170.18 80.01) (xy 172.72 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6caf3fed-8e37-4736-b78d-3639c71c894c")
+	)
+	(wire
+		(pts
+			(xy 170.18 95.25) (xy 172.72 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d7e3c71-e76b-407d-89f7-cb162486910d")
 	)
 	(wire
 		(pts
@@ -3085,6 +3135,26 @@
 			(type default)
 		)
 		(uuid "80ce1862-c92e-4060-8845-2637d6e7a85d")
+	)
+	(wire
+		(pts
+			(xy 170.18 90.17) (xy 172.72 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83a62f8c-64a8-4d47-88cc-868fc926352f")
+	)
+	(wire
+		(pts
+			(xy 30.48 92.71) (xy 35.56 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8401a2a6-2def-4d3f-9bc6-24df8713b63d")
 	)
 	(wire
 		(pts
@@ -3318,6 +3388,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 90.17) (xy 35.56 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d89a1353-8e6f-49d1-ac4a-66823bae6166")
+	)
+	(wire
+		(pts
 			(xy 151.13 26.67) (xy 151.13 29.21)
 		)
 		(stroke
@@ -3486,6 +3566,28 @@
 		)
 		(uuid "fdd8cfb8-181a-420d-8437-8885e86b894f")
 	)
+	(global_label "MCSI_D0_P"
+		(shape bidirectional)
+		(at 172.72 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "16286d7e-b801-4c01-add3-606be7adc92e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.0369 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VDD-CPU"
 		(shape bidirectional)
 		(at 111.76 170.18 270)
@@ -3596,6 +3698,28 @@
 			)
 		)
 	)
+	(global_label "MCSI_CK_P"
+		(shape bidirectional)
+		(at 172.72 80.01 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3ef0430f-f75f-4fff-9773-64d9668a4a51")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.0974 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "AVCC"
 		(shape bidirectional)
 		(at 93.98 26.67 90)
@@ -3640,6 +3764,28 @@
 			)
 		)
 	)
+	(global_label "MCSI_D0_N"
+		(shape bidirectional)
+		(at 172.72 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "45391312-3544-4b31-a7da-b2c3fab886d1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.0974 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VCC-RTC"
 		(shape bidirectional)
 		(at 151.13 26.67 90)
@@ -3653,6 +3799,28 @@
 		(uuid "460a4ca9-4663-46ad-825b-a73a6f1271ec")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 151.13 13.8649 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MCSI_CK_N"
+		(shape bidirectional)
+		(at 172.72 82.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4f782024-afd4-4e0b-a947-38ba68b72ff5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.1579 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3702,6 +3870,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CSI-SCK"
+		(shape bidirectional)
+		(at 30.48 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "55124128-771d-4d95-90ba-52b4b3b38b17")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 17.9773 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3829,6 +4019,28 @@
 		(uuid "6f0665ca-f302-468f-9125-c9121aaf5e4a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 124.46 183.348 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CSI_SDA"
+		(shape bidirectional)
+		(at 30.48 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "70fc03c3-8857-419e-8160-fe671887d5ac")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.7635 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4146,6 +4358,28 @@
 			)
 		)
 	)
+	(global_label "MCSI_D1_P"
+		(shape bidirectional)
+		(at 172.72 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a24e616b-f810-4c46-983e-6a997862f097")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.0369 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "X32KOUT"
 		(shape bidirectional)
 		(at 172.72 48.26 0)
@@ -4340,6 +4574,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MCSI_D1_N"
+		(shape bidirectional)
+		(at 172.72 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ce529bcb-16b1-4171-8900-ec1fd7246929")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.0974 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -5026,7 +5282,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "6e10c56a-e5a3-4901-929f-3bc6ae5eaa96")
-		(property "Sheetname" "CODEC"
+		(property "Sheetname" "Camera"
 			(at 15.24 36.1184 0)
 			(effects
 				(font
@@ -5035,7 +5291,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "codec.kicad_sch"
+		(property "Sheetfile" "camera.kicad_sch"
 			(at 15.24 41.2246 0)
 			(effects
 				(font
