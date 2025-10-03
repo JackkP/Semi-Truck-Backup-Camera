@@ -2828,6 +2828,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 26.67) (xy 109.22 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13bdb08d-b86b-414f-8128-53f920a26184")
+	)
+	(wire
+		(pts
 			(xy 170.18 137.16) (xy 172.72 137.16)
 		)
 		(stroke
@@ -3065,6 +3075,16 @@
 			(type default)
 		)
 		(uuid "6caf3fed-8e37-4736-b78d-3639c71c894c")
+	)
+	(wire
+		(pts
+			(xy 106.68 26.67) (xy 106.68 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d428664-7661-4821-a10c-142bdec795d4")
 	)
 	(wire
 		(pts
@@ -3418,6 +3438,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 26.67) (xy 137.16 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3a9b822-57ef-4f44-b5eb-b1c8c5cdb2e5")
+	)
+	(wire
+		(pts
 			(xy 116.84 26.67) (xy 116.84 29.21)
 		)
 		(stroke
@@ -3579,6 +3609,28 @@
 		(uuid "16286d7e-b801-4c01-add3-606be7adc92e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 187.0369 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USB_N"
+		(shape bidirectional)
+		(at 109.22 26.67 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "16ca74df-135c-4c87-9bf8-9bd139a9d314")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 109.22 16.4654 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4248,6 +4300,28 @@
 			)
 		)
 	)
+	(global_label "USB_P"
+		(shape bidirectional)
+		(at 106.68 26.67 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "91e55950-f787-4f8a-b0a6-5a6495aa12df")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.68 16.5259 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VDD-CPU"
 		(shape bidirectional)
 		(at 30.48 133.35 180)
@@ -4503,6 +4577,28 @@
 		(uuid "bf5a2147-4b39-4506-a479-58376a5ecb69")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 187.0975 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USB_ID"
+		(shape bidirectional)
+		(at 137.16 26.67 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bfb62448-ad09-4875-8ac0-ae782247e862")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 137.16 15.9211 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5225,6 +5321,48 @@
 		)
 	)
 	(sheet
+		(at 15.24 36.83)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1157294a-1719-49ab-b853-49534ca658dc")
+		(property "Sheetname" "Camera"
+			(at 15.24 36.1184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "camera.kicad_sch"
+			(at 15.24 41.2246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Camera_PCB"
+				(path "/400c1603-202c-4359-a830-d2f0d06dd3ce"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 15.24 16.51)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
@@ -5262,48 +5400,6 @@
 			(project "Camera_PCB"
 				(path "/400c1603-202c-4359-a830-d2f0d06dd3ce"
 					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 15.24 36.83)
-		(size 12.7 3.81)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "6e10c56a-e5a3-4901-929f-3bc6ae5eaa96")
-		(property "Sheetname" "Camera"
-			(at 15.24 36.1184 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "camera.kicad_sch"
-			(at 15.24 41.2246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Camera_PCB"
-				(path "/400c1603-202c-4359-a830-d2f0d06dd3ce"
-					(page "4")
 				)
 			)
 		)
