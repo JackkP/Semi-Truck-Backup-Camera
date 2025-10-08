@@ -4,6 +4,10 @@
 	(generator_version "9.0")
 	(uuid "4ca53f51-ccee-4508-858d-c3caf36cdde1")
 	(paper "A4")
+	(title_block
+		(title "Wireless Backup Camera - Encoder")
+		(company "Group 25 Senior Design")
+	)
 	(lib_symbols
 		(symbol "Connector:USB_A"
 			(pin_names
