@@ -2786,6 +2786,16 @@
 		)
 		(uuid "c6a9fb67-dbd9-4220-88b6-8f9d95d9758a")
 	)
+	(text "P100 USB_ID Uneeded \nfor USB A 2.0"
+		(exclude_from_sim no)
+		(at 126.746 49.784 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ce91395a-8b8f-4ea4-83bc-b847bd22b496")
+	)
 	(text "P10 MCSI_MCLK, used as \npinout but \ncurrently unused(?)"
 		(exclude_from_sim no)
 		(at 53.086 80.264 0)
