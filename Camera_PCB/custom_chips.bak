@@ -2778,8 +2778,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "J13"
-			(at -2.54 7.874 0)
+		(property "Reference" "TF_Card"
+			(at -1.27 8.128 0)
 			(effects
 				(font
 					(size 1.27 1.27)
