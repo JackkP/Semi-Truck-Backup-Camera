@@ -4,6 +4,10 @@
 	(generator_version "9.0")
 	(uuid "fdcaa26d-16d0-46b8-8484-e933b36d522c")
 	(paper "A4")
+	(title_block
+		(title "Wireless Backup Camera - Encoder")
+		(company "Group 25 Senior Design")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers
@@ -1330,7 +1334,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Card:microSD_HC_Hirose_DM3D-SF"
 			(at 149.86 85.09 0)
 			(effects
 				(font
@@ -1418,7 +1422,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 172.4152 101.6 0)
 			(effects
 				(font
@@ -1487,7 +1491,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 124.206 71.374 90)
 			(effects
 				(font
@@ -1556,7 +1560,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 139.446 71.374 90)
 			(effects
 				(font
@@ -1691,7 +1695,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 135.636 71.374 90)
 			(effects
 				(font
@@ -1760,7 +1764,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 128.016 71.374 90)
 			(effects
 				(font
@@ -1829,7 +1833,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 131.826 71.374 90)
 			(effects
 				(font
