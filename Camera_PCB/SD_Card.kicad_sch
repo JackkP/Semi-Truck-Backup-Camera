@@ -4,6 +4,10 @@
 	(generator_version "9.0")
 	(uuid "fdcaa26d-16d0-46b8-8484-e933b36d522c")
 	(paper "A4")
+	(title_block
+		(title "Wireless Backup Camera - Encoder")
+		(company "Group 25 Senior Design")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers

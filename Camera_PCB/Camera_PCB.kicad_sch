@@ -4,6 +4,10 @@
 	(generator_version "9.0")
 	(uuid "400c1603-202c-4359-a830-d2f0d06dd3ce")
 	(paper "A4")
+	(title_block
+		(title "Wireless Backup Camera - Encoder")
+		(company "Group 25 Senior Design")
+	)
 	(lib_symbols
 		(symbol "custom_chips:V3S-eLQFP128"
 			(exclude_from_sim no)
@@ -2786,6 +2790,16 @@
 		)
 		(uuid "c6a9fb67-dbd9-4220-88b6-8f9d95d9758a")
 	)
+	(text "P100 USB_ID Uneeded \nfor USB A 2.0"
+		(exclude_from_sim no)
+		(at 126.746 49.784 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ce91395a-8b8f-4ea4-83bc-b847bd22b496")
+	)
 	(text "P10 MCSI_MCLK, used as \npinout but \ncurrently unused(?)"
 		(exclude_from_sim no)
 		(at 53.086 80.264 0)
@@ -4096,28 +4110,6 @@
 			)
 		)
 	)
-	(global_label "MCSI_CK_P"
-		(shape bidirectional)
-		(at 172.72 80.01 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3ef0430f-f75f-4fff-9773-64d9668a4a51")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 187.0974 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "AVCC"
 		(shape bidirectional)
 		(at 93.98 26.67 90)
@@ -4197,28 +4189,6 @@
 		(uuid "460a4ca9-4663-46ad-825b-a73a6f1271ec")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 151.13 13.8649 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MCSI_CK_N"
-		(shape bidirectional)
-		(at 172.72 82.55 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4f782024-afd4-4e0b-a947-38ba68b72ff5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 187.1579 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4505,6 +4475,28 @@
 		(uuid "78ad9341-b6c6-4a2d-bbe1-e4c86b4f508e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 153.67 14.4696 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MCSI_CK_P"
+		(shape bidirectional)
+		(at 172.72 82.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7b83b706-f922-4576-8037-f92e977359c8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.0974 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4879,6 +4871,28 @@
 		(uuid "af1467d1-dfcf-404a-a31f-045463b4b14e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 183.8317 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MCSI_CK_N"
+		(shape bidirectional)
+		(at 172.72 80.01 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "af3e9c20-8849-4183-ac3b-3698b48f42ff")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.1579 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
