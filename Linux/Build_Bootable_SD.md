@@ -49,59 +49,37 @@ sudo make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- menuconfig
 # -> Device Drivers -> Network device support -> Wireless LAN -> MediaTek MT7601U (USB) support 
 
 ############ everything from here till end of this section is for USB ############
-############ ignore if not trying to get USB to work ############
+############ ignore if not trying to get USB to work                  ############
 
 # -> Device Drivers -> USB support -> USB announce new devices
-# -> Device Drivers -> USB support -> USB role switch support -> *
-# -> Device Drivers -> USB support -> MUSB Mode Selection -> Host only mode # kills lsusb but this may be intentional?
-# -> Device Drivers -> USB support -> USB Physical Layer drivers -> NOP USB Transciever Driver (disable)
 
 # -> Kernel hacking -> printk and dmesg options -> Enable core function of dynamic debug support
 
-### The following is .config lines that should (maybe) be enabled
-### ???
-# CONFIG_DEBUG_FS=y                # makes /sys/kernel/debug available
-# CONFIG_USB_SUPPORT=y
-# CONFIG_USB=y
-# CONFIG_USB_COMMON=y
-# CONFIG_USB_MUSB_HDRC=y
-# CONFIG_USB_MUSB_SUNXI=y          # sunxi platform glue for musb
-# CONFIG_USB_ROLE_SWITCH=y         # USB role switch support
-# CONFIG_USB_OTG_FSM=y             # OTG FSM support if available (could not find)
-# CONFIG_USB_PHY=y
-# CONFIG_USB_MUSB_HOST=y           # host support for MUSB
-### optional but helpful:
-# CONFIG_DYNAMIC_DEBUG=y
-???
+# Ignore the following two lines for now
+# can also replace /linux/arch/arm/boot/dts/allwinner/sun8i-v3s-licheepi-zero.dts
+# with the file https://github.com/JackkP/Semi-Truck-Backup-Camera/blob/main/Linux/sun8i-v3s-semi-cam.dts
 
 # modify device tree:
 vim ./arch/arm/boot/dts/allwinner/sun8i-v3s-licheepi-zero.dts
 # set the following (overwrite existing usb_otg and usbphy):
 ###
-&reg_usb0_vbus {
-        regulator-always-on;
-        /delete-property/ gpio;
-        /delete-property/ enable-active-high;
-        status = "okay";
-};
-
 &usb_otg {
-        compatible = "allwinner,sun8i-h3-musb"; //,"allwinner,sun8i-v3s-musb", "allwinner,sunxi-musb";
-        dr_mode = "host";
-        vbus-supply = <&reg_usb0_vbus>;
-        status = "okay";
+    status = "disabled";
 };
 
 &usbphy {
+	//remove id gpio pins
         //usb0_id_det-gpios = <&pio 5 6 GPIO_ACTIVE_HIGH>;
-        compatible = "allwinner,sun8i-v3s-usb-phy";
-        //, "allwinner,sun8i-h3-usb-phy";
-        usb0_vbus-supply = <&reg_usb0_vbus>;
+        status = "okay";
+};
+
+// enable USB 2.0 EHCI host controller
+&ehci {
         status = "okay";
 };
 ###
 
-############ end of USB ############
+############ end of USB                                               ############
 
 
 # Compile the kernel
@@ -113,7 +91,7 @@ sudo ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make -j$(nproc) dtbs
 sudo ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make -j$(nproc) modules
 sudo ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_MOD_PATH=./modules_install_out make modules modules_install
 # make headers
-sudo ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_HDR_PATH=./headers_install_out make headers_install
+# sudo ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_HDR_PATH=./headers_install_out make headers_install
 
 # return to parent directory
 cd ..
