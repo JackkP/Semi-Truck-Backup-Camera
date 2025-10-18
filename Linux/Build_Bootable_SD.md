@@ -39,7 +39,70 @@ cd linux
 sudo make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- sunxi_defconfig
 
 # edit the .config file (if necessesary). There are like a million config settings (rip)
-#sudo make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- menuconfig
+sudo make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- menuconfig
+# set the following options
+# -> Networking support -> Wireless
+# -> Networking support -> Wireless -> cfg80211 -> M
+# -> Networking support -> Wireless -> Generic IEEE 802.11 Networking Stack (mac 80211) -> M
+#
+# -> Device Drivers -> Network device support -> Wireless LAN
+# -> Device Drivers -> Network device support -> Wireless LAN -> MediaTek MT7601U (USB) support 
+
+############ everything from here till end of this section is for USB ############
+############ ignore if not trying to get USB to work ############
+
+# -> Device Drivers -> USB support -> USB announce new devices
+# -> Device Drivers -> USB support -> USB role switch support -> *
+# -> Device Drivers -> USB support -> MUSB Mode Selection -> Host only mode # kills lsusb but this may be intentional?
+# -> Device Drivers -> USB support -> USB Physical Layer drivers -> NOP USB Transciever Driver (disable)
+
+# -> Kernel hacking -> printk and dmesg options -> Enable core function of dynamic debug support
+
+### The following is .config lines that should (maybe) be enabled
+### ???
+# CONFIG_DEBUG_FS=y                # makes /sys/kernel/debug available
+# CONFIG_USB_SUPPORT=y
+# CONFIG_USB=y
+# CONFIG_USB_COMMON=y
+# CONFIG_USB_MUSB_HDRC=y
+# CONFIG_USB_MUSB_SUNXI=y          # sunxi platform glue for musb
+# CONFIG_USB_ROLE_SWITCH=y         # USB role switch support
+# CONFIG_USB_OTG_FSM=y             # OTG FSM support if available (could not find)
+# CONFIG_USB_PHY=y
+# CONFIG_USB_MUSB_HOST=y           # host support for MUSB
+### optional but helpful:
+# CONFIG_DYNAMIC_DEBUG=y
+???
+
+# modify device tree:
+vim ./arch/arm/boot/dts/allwinner/sun8i-v3s-licheepi-zero.dts
+# set the following (overwrite existing usb_otg and usbphy):
+###
+&reg_usb0_vbus {
+        regulator-always-on;
+        /delete-property/ gpio;
+        /delete-property/ enable-active-high;
+        status = "okay";
+};
+
+&usb_otg {
+        compatible = "allwinner,sun8i-h3-musb"; //,"allwinner,sun8i-v3s-musb", "allwinner,sunxi-musb";
+        dr_mode = "host";
+        vbus-supply = <&reg_usb0_vbus>;
+        status = "okay";
+};
+
+&usbphy {
+        //usb0_id_det-gpios = <&pio 5 6 GPIO_ACTIVE_HIGH>;
+        compatible = "allwinner,sun8i-v3s-usb-phy";
+        //, "allwinner,sun8i-h3-usb-phy";
+        usb0_vbus-supply = <&reg_usb0_vbus>;
+        status = "okay";
+};
+###
+
+############ end of USB ############
+
 
 # Compile the kernel
 # make zImage
@@ -117,21 +180,40 @@ git clone https://gitlab.com/buildroot.org/buildroot.git
 cd buildroot
 make menuconfig
 
-# -> Target options -> Target Architecture -> ARM
-# -> Target options -> Target Architecture Variant -> ARM
+# -> Target options -> Target Architecture -> ARM (little endian)
+# -> Target options -> Target Architecture Variant -> cortex-A7
 # -> Target options -> Target ABI -> EABIhf
 #
 # -> Toolchain -> Toolchain type -> Buildroot toolchain
+# -> Toolchain -> *** GCC Options *** -> Enable C++ support
 #
+### buildroot uses a Rootfs initialized by BusyBox
 # -> System configuration -> Init system -> BusyBox
 # -> System configuration -> Root password -> toortoor
+# -> System configuration -> /dev management -> Dynamic using devtmpfs + eudev
 #
+### IMPORTANT, CHECK THIS FIRST OR OTHER OPTIONS MAY NOT APPEAR:
+### Busybox also provides some packages here, important to list these
+# -> Target Packages -> Show packages that are also provided by BusyBox
+#
+### network tools ###
 # -> Target packages -> Networking applications -> wpa_supplicant
 # -> Target packages -> Networking applications -> iw
 # -> Target packages -> Networking applications -> wireless tools 
+# -> Target packages -> Networking applications -> dhcpcd
 # doesn't work # -> Target packages -> Networking applications -> udhcpc???
 # doesn't work #-> Target packages -> Hardware handling -> usbutils???
 # 
+### for gstreamer ###
+# -> Target packages -> Audio and video applications -> gstreamer 1.x
+# -> Target packages -> Audio and video applications -> gst1-plugins-good
+# -> Target packages -> Audio and video applications -> gst1-plugins-bad
+# -> Target packages -> Audio and video applications -> gst1-plugins-ugly
+#
+### ubutils ###
+# -> Target packages -> Hardware handling -> usbutils
+# 
+### Output format ###
 # -> Filesystem images -> tar the root filesystem
 
 make
@@ -175,8 +257,8 @@ sudo cat <<EOT | sudo sfdisk ${card}
 EOT
 
 # Create the actual filesystems:
-sudo mkfs.vfat ${card}${p}1
-sudo mkfs.ext4 ${card}${p}2
+sudo mkfs.vfat -F ${card}${p}1
+sudo mkfs.ext4 -F ${card}${p}2
 sudo cardroot=${card}${p}2
 
 # write the kernel image, dts, and boot script to the boot partition
@@ -186,6 +268,8 @@ sudo cp linux/arch/arm/boot/dts/allwinner/sun8i-v3s-licheepi-zero.dtb /mnt
 
 # copy boot script to fat partition
 sudo cp boot.scr /mnt
+
+sudo umount /mnt/
 
 # copy rootfs to root partition on sd card
 sudo mount ${card}${p}2 /mnt/
@@ -207,6 +291,7 @@ sudo cp -r linux/modules_install_out/lib /mnt/
 
 sudo umount /mnt/
 
-
+# check to make sure it's no longer mounted before removing:
+lsblk
 
 
