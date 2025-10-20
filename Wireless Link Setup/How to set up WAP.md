@@ -68,11 +68,18 @@ and set
 
 ## 5. Configure dnsmasq (DHCP server)
 back up the original dnsmasq.conf
+
 `sudo mv /etc/dnsmasq.conf /etc/dnsmasq.conf.orig`
+
 create a new dnsmasq.conf file to define the ip range and lease duration
+
 `sudo vim /etc/dnsmasq.conf`
-interface=wlxe84e06b0a485
+
+```
+interface=wlan0
+dhcp-authoritative
 dhcp-range=192.168.50.2,192.168.50.20,255.255.255.0,24h
+```
 
 ## 6. Start (and default to start on boot) services
 ```
@@ -118,3 +125,4 @@ sudo apt upgrade
 
 ### 2. networkd vs NM conflict
 Using systemd-networkd instead of NetworkManager can cause conflicts. Not really sure how to resolve this one yet other than disabling one of the services. Setting up an AP with Network Manager doesn't allow the same level of configurability as hostapd so we elect not to use it, but using Network Manager to configure other WiFi connections might cause conflict.
+
