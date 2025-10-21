@@ -1,0 +1,27 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides: wifi
+# Required-Start: $network
+# Default-Start: 2 3 4 5
+### END INIT INFO
+
+case "$1" in
+  start)
+    echo "Starting Wi-Fi..."
+    wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
+    sleep 5
+    udhcpc -i wlan0 -n -q
+    ;;
+  stop)
+    echo "Stopping Wi-Fi..."
+    killall wpa_supplicant
+    ;;
+  restart)
+    $0 stop
+    sleep 1
+    $0 start
+    ;;
+  *)
+    echo "Usage: $0 {start|stop|restart}"
+    exit 1
+esac
