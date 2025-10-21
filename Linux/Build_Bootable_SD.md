@@ -154,6 +154,8 @@ cd ../..
 mkdir buildroot
 cd buildroot
 
+sudo apt install uuid
+
 git clone https://gitlab.com/buildroot.org/buildroot.git
 cd buildroot
 make menuconfig
@@ -162,7 +164,14 @@ make menuconfig
 # -> Target options -> Target Architecture Variant -> cortex-A7
 # -> Target options -> Target ABI -> EABIhf
 #
-# -> Toolchain -> Toolchain type -> Buildroot toolchain
+#
+### use bootln toolchain ###
+### (slow first time, then faster) ###
+# -> Toolchain -> Toolchain type -> External toolchain
+# -> Toolchain -> Toolchain -> Bootlin toolchains
+# -> Toolchain -> Toolchain origin -> Toolchain to be downloaded and installed
+# -> Toolchain -> Bootlin toolchain variant -> armv7-eabihf glibc stable 2025.08-1
+#
 # -> Toolchain -> *** GCC Options *** -> Enable C++ support
 #
 ### buildroot uses a Rootfs initialized by BusyBox
@@ -176,25 +185,65 @@ make menuconfig
 #
 ### network tools ###
 # -> Target packages -> Networking applications -> wpa_supplicant
+# -> Target packages -> Networking applications -> wpa_supplicant -> Enable nl80211 support
+# -> Target packages -> Networking applications -> wpa_supplicant -> Enable HT/VHT/HE overrides
+# -> Target packages -> Networking applications -> wpa_supplicant -> Enable EAP
+# -> Target packages -> Networking applications -> wpa_supplicant -> Install wpa_cli binary
+# -> Target packages -> Networking applications -> wpa_supplicant -> Install wpa_passphrase binary
+# -> Target packages -> Networking applications -> wpa_supplicant -> Enable Unix-socket control interface
+
+
 # -> Target packages -> Networking applications -> iw
 # -> Target packages -> Networking applications -> wireless tools 
 # -> Target packages -> Networking applications -> dhcpcd
-# doesn't work # -> Target packages -> Networking applications -> udhcpc???
-# doesn't work #-> Target packages -> Hardware handling -> usbutils???
 # 
-### for gstreamer ###
+### usbutils ###
+# -> Target packages -> Hardware handling -> usbutils
+#
+### mt7601u driver ###
+# -> Target packages -> Hardware handling -> Firmware -> Linux firmware
+# -> Target packages -> Hardware handling -> Firmware -> Linux firmware -> WiFi firmware -> MT7601U
+# 
+### uuid (network manager dependency) ###
+# -> Target packages -> System tools -> util-linux -> uuidd
+# 
+### network manager ###
+### needs uuid package on host ###
+### install with sudo apt install uuid-dev (above) ###
+# -> Target packages -> Networking applications -> network-manager
+# -> Target packages -> Networking applications -> nmtui support
+# -> Target packages -> Networking applications -> nmcli support
+#
+# -> Target packages -> System tools -> util-Linux -> rfkill
+#
+### Gstreamer plugins ###
 # -> Target packages -> Audio and video applications -> gstreamer 1.x
 # -> Target packages -> Audio and video applications -> gst1-plugins-good
+# -> Target packages -> Audio and video applications -> gst1-plugins-good -> rtp
+# -> Target packages -> Audio and video applications -> gst1-plugins-good -> udp
+# -> Target packages -> Audio and video applications -> gst1-plugins-good -> v4l2
+# -> Target packages -> Audio and video applications -> gst1-plugins-good -> v4l2-probe
 # -> Target packages -> Audio and video applications -> gst1-plugins-bad
+# -> Target packages -> Audio and video applications -> gst1-plugins-bad -> videoparsers
+# -> Target packages -> Audio and video applications -> gst1-plugins-bad -> v4l2-codecs
 # -> Target packages -> Audio and video applications -> gst1-plugins-ugly
+# -> Target packages -> Audio and video applications -> gst1-plugins-ugly -> x264
+# -> Target packages -> Audio and video applications -> gst1-imx
+# -> Target packages -> Audio and video applications -> gst1-imx -> imxv4l2videosrc
+# -> Target packages -> Audio and video applications -> gst1-imx -> imxv4l2videosink
+### end Gstreamer stuff ###
 #
-### ubutils ###
-# -> Target packages -> Hardware handling -> usbutils
-# 
 ### Output format ###
 # -> Filesystem images -> tar the root filesystem
+#
 
-make
+
+### Disable udhcpc ###
+# we do this because it appears to be broken and has trouble with dhcp lease time
+make busybox-menuconfig
+# Networking Utilities -> disable udhcpc
+
+make -j$(nproc)
 
 cd ..
 
@@ -210,6 +259,11 @@ bootz 0x42000000 - 0x41800000
 # compile boot script
 mkimage -C none -A arm -T script -d boot.cmd boot.scr
 
+
+#################################################################################################
+
+# clone the semi-truck backup camera repo so that you can use the wpa_supplicant.conf and wifi-init scripts
+git clone https://github.com/JackkP/Semi-Truck-Backup-Camera.git
 
 #################################################################################################
 # write U-boot and Linux kernel image to a bootable SD card
@@ -267,9 +321,14 @@ sudo mkdir -p /mnt/lib/modules
 sudo rm -rf /mnt/lib/modules/
 sudo cp -r linux/modules_install_out/lib /mnt/
 
+# copy wpa configuration and init script to root partition
+sudo cp Semi-Truck-Backup-Camera/Linux/S51wifi /mnt/etc/init.d/
+sudo cp Semi-Truck-Backup-Camera/Linux/wpa_supplicant.conf/ /mnt/etc/
+
 sudo umount /mnt/
 
 # check to make sure it's no longer mounted before removing:
 lsblk
+
 
 
