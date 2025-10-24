@@ -7097,7 +7097,7 @@
 			(uuid "84701d7c-3bc7-4ff9-ae61-697947013f78")
 		)
 		(pin "3"
-			(uuid "07572d89-dd4b-4a8c-95a4-d57f85ca0d23")
+			(uuid "07572d89-dd4b-4a8c-95a4-d57f85ca0d24")
 		)
 		(instances
 			(project "BatteryPower"
@@ -7250,10 +7250,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "63ce23a0-3c55-48bd-a5ad-d1ca2f4c80a6")
 		(property "Reference" "C6"
-			(at 43.18 41.9099 0)
+			(at 41.148 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7262,7 +7261,7 @@
 			)
 		)
 		(property "Value" "C"
-			(at 43.18 44.4499 0)
+			(at 41.91 45.466 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8406,10 +8405,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9b69fb51-ecf5-46b0-bab7-aa4b55370455")
 		(property "Reference" "C5"
-			(at 49.53 41.9099 0)
+			(at 46.482 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8418,7 +8416,7 @@
 			)
 		)
 		(property "Value" "C"
-			(at 49.53 44.4499 0)
+			(at 48.26 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
