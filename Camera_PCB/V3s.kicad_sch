@@ -5193,6 +5193,22 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" ""
+			(at 107.95 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor" ""
+			(at 107.95 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "115"
 			(uuid "39dbd4b3-52c4-4702-b225-ad7c87b0d200")
 		)
