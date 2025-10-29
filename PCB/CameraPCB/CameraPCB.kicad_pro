@@ -473,7 +473,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Camera_PCB.kicad_pro",
+    "filename": "CameraPCB.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -520,7 +520,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "Camera_PCB.net",
+      "netlist": "CameraPCB.net",
       "plot": "./",
       "pos_files": "",
       "specctra_dsn": "",
@@ -675,6 +675,14 @@
     [
       "8aea63de-025a-40df-acd1-ce0de9a2cf46",
       "Voltages"
+    ],
+    [
+      "63007821-20b4-4692-9a5a-85c4738356da",
+      "Power"
+    ],
+    [
+      "47962aac-64be-4928-9c9c-c3ab3aab91c0",
+      "V3s"
     ]
   ],
   "text_variables": {}

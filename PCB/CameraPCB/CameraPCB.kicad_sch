@@ -1,0 +1,270 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "400c1603-202c-4359-a830-d2f0d06dd3ce")
+	(paper "A4")
+	(title_block
+		(title "Wireless Backup Camera - Encoder")
+		(company "Group 25 Senior Design")
+	)
+	(lib_symbols)
+	(sheet
+		(at 17.78 60.96)
+		(size 40.64 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1157294a-1719-49ab-b853-49534ca658dc")
+		(property "Sheetname" "Camera"
+			(at 17.78 60.2484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "camera.kicad_sch"
+			(at 17.78 78.0546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CameraPCB"
+				(path "/400c1603-202c-4359-a830-d2f0d06dd3ce"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 17.78 127)
+		(size 40.64 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "47962aac-64be-4928-9c9c-c3ab3aab91c0")
+		(property "Sheetname" "V3s"
+			(at 17.78 126.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "V3s.kicad_sch"
+			(at 17.78 144.0946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CameraPCB"
+				(path "/400c1603-202c-4359-a830-d2f0d06dd3ce"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 17.78 17.78)
+		(size 40.64 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4f1433c9-b97e-4b60-ad96-8bb3bb8cf176")
+		(property "Sheetname" "Oscillators"
+			(at 17.78 17.0684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Oscillators.kicad_sch"
+			(at 17.78 33.6046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CameraPCB"
+				(path "/400c1603-202c-4359-a830-d2f0d06dd3ce"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 17.78 104.14)
+		(size 40.64 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "63007821-20b4-4692-9a5a-85c4738356da")
+		(property "Sheetname" "Power"
+			(at 17.78 103.4284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 17.78 122.5046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CameraPCB"
+				(path "/400c1603-202c-4359-a830-d2f0d06dd3ce"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 17.78 82.55)
+		(size 40.64 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8aea63de-025a-40df-acd1-ce0de9a2cf46")
+		(property "Sheetname" "Voltages"
+			(at 17.78 81.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Voltages.kicad_sch"
+			(at 17.78 98.3746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CameraPCB"
+				(path "/400c1603-202c-4359-a830-d2f0d06dd3ce"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 17.78 40.64)
+		(size 40.64 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a4c77a59-a27d-4681-b324-24cee2a545f5")
+		(property "Sheetname" "SD_Card"
+			(at 17.78 39.9284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SD_Card.kicad_sch"
+			(at 17.78 56.4646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CameraPCB"
+				(path "/400c1603-202c-4359-a830-d2f0d06dd3ce"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

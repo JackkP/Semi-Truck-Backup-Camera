@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "BackupCamCustomParts")(type "KiCad")(uri "C:/Users/tbrow/OneDrive/Documents/GitHub/Semi-Truck-Backup-Camera/Camera_PCB/BackupCamCustomParts")(options "")(descr ""))
+)
