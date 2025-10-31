@@ -2726,16 +2726,6 @@
 		)
 		(uuid "17e2cd8e-6c09-4053-a834-ede0a445f5bc")
 	)
-	(text "P45, P46, \nP48, P49 are\n2 TWI lines"
-		(exclude_from_sim no)
-		(at 95.25 191.008 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "27473504-5e73-4eaf-9d59-f4d3ff88c632")
-	)
 	(text "EPHY Signals (+ P77, P78) Unconnected in Doc"
 		(exclude_from_sim no)
 		(at 201.676 68.58 0)
@@ -2745,16 +2735,6 @@
 			)
 		)
 		(uuid "358bc0f8-cb25-4bbe-90e0-0d72a510a30f")
-	)
-	(text "P41 - P44\nMISC Pins"
-		(exclude_from_sim no)
-		(at 85.598 180.086 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "35d06563-8fb2-4eaa-bab9-c50e2b9cd982")
 	)
 	(text "Audio Connections, not needed"
 		(exclude_from_sim no)
@@ -2796,9 +2776,9 @@
 		)
 		(uuid "bbd37852-de80-498b-a38b-09687e6072d0")
 	)
-	(text "P39, P40\nUART2 Pins"
+	(text "Expose UART 2 for\nbackup UART"
 		(exclude_from_sim no)
-		(at 76.454 174.498 0)
+		(at 71.12 190.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2815,6 +2795,16 @@
 			)
 		)
 		(uuid "db30e757-cdaa-4ed0-876d-49987a254ec3")
+	)
+	(text "Expose UART 0 for\nSystem UART"
+		(exclude_from_sim no)
+		(at 99.06 189.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e8837ef1-361b-4527-9dbc-fa698894f6dc")
 	)
 	(text "Diff btw. \nDev + Allwinner Schem.\n on P1, P2, P3, P128"
 		(exclude_from_sim no)
@@ -2891,10 +2881,6 @@
 		(uuid "027798b9-e20f-4675-9691-d6ffefc7241f")
 	)
 	(no_connect
-		(at 100.33 170.18)
-		(uuid "049be89b-650a-4cbc-9bf1-0b0e79a1d3de")
-	)
-	(no_connect
 		(at 60.96 168.91)
 		(uuid "06cdc03e-de39-4674-98ed-d0993bcd4d07")
 	)
@@ -2907,14 +2893,6 @@
 		(uuid "101f86d2-3c51-44d1-9f6e-7b30320847f0")
 	)
 	(no_connect
-		(at 87.63 170.18)
-		(uuid "1729b470-00b7-4d45-a7e8-c87bed4cff89")
-	)
-	(no_connect
-		(at 97.79 170.18)
-		(uuid "1c3f6783-abf0-4ffe-b440-677f569ec4c5")
-	)
-	(no_connect
 		(at 60.96 31.75)
 		(uuid "20352cfa-8d7e-43de-a0d4-746460e467e8")
 	)
@@ -2925,10 +2903,6 @@
 	(no_connect
 		(at 80.01 170.18)
 		(uuid "22825e51-ae7b-4fe8-ad95-44c8c05d4b73")
-	)
-	(no_connect
-		(at 77.47 170.18)
-		(uuid "2450b5a8-06cc-4f18-81a5-ee386501448a")
 	)
 	(no_connect
 		(at 39.37 87.63)
@@ -2959,10 +2933,6 @@
 		(uuid "3cb20596-3da7-4bcc-afb4-086193a7bc29")
 	)
 	(no_connect
-		(at 92.71 170.18)
-		(uuid "4a5abb9a-7aa9-4276-8124-9bb0879412c9")
-	)
-	(no_connect
 		(at 39.37 151.13)
 		(uuid "4ab6e7bc-422f-4236-8476-5dd286007875")
 	)
@@ -2973,10 +2943,6 @@
 	(no_connect
 		(at 39.37 115.57)
 		(uuid "55a21234-d235-4826-a1c0-16578960be7a")
-	)
-	(no_connect
-		(at 82.55 170.18)
-		(uuid "5fbe860b-25ad-45f6-83bf-d217e52ee7a8")
 	)
 	(no_connect
 		(at 53.34 168.91)
@@ -3029,10 +2995,6 @@
 	(no_connect
 		(at 39.37 128.27)
 		(uuid "84c2bd59-74a5-445c-a17d-bfcc6c1f6def")
-	)
-	(no_connect
-		(at 90.17 170.18)
-		(uuid "8e07f541-6331-45c7-86e3-330b1cf2d36c")
 	)
 	(no_connect
 		(at 39.37 118.11)
@@ -3127,10 +3089,6 @@
 		(uuid "ee9c51df-0ad6-4905-b514-f1d1b9206755")
 	)
 	(no_connect
-		(at 74.93 170.18)
-		(uuid "ef28d78b-cc44-458d-93bf-70b5fdeccf19")
-	)
-	(no_connect
 		(at 39.37 69.85)
 		(uuid "ef5a467d-ca88-414c-afb4-afce5515114d")
 	)
@@ -3177,6 +3135,16 @@
 			(type default)
 		)
 		(uuid "075622cf-26f9-41bb-91b4-d7cecd2620ec")
+	)
+	(wire
+		(pts
+			(xy 100.33 170.18) (xy 100.33 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08e05146-61c5-429e-86e9-a0cd45e437f2")
 	)
 	(wire
 		(pts
@@ -3400,6 +3368,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 172.72) (xy 74.93 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e145ca3-f7da-47d0-bc9b-355fbec2c431")
+	)
+	(wire
+		(pts
 			(xy 39.37 138.43) (xy 36.83 138.43)
 		)
 		(stroke
@@ -3410,6 +3388,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 172.72) (xy 97.79 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5393be04-07c9-47fd-936f-4f028b6da303")
+	)
+	(wire
+		(pts
 			(xy 66.04 29.21) (xy 66.04 31.75)
 		)
 		(stroke
@@ -3417,6 +3405,16 @@
 			(type default)
 		)
 		(uuid "56133acf-6d97-438e-b98f-6d3dd2735e66")
+	)
+	(wire
+		(pts
+			(xy 82.55 170.18) (xy 82.55 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5966afa5-f8ba-4cd6-8a91-004c8436db94")
 	)
 	(wire
 		(pts
@@ -3467,6 +3465,16 @@
 			(type default)
 		)
 		(uuid "670c7ea3-ea62-43a8-b97b-f471cc795664")
+	)
+	(wire
+		(pts
+			(xy 77.47 172.72) (xy 77.47 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ba2d595-d029-41d1-a6d0-2f25b81f2f7a")
 	)
 	(wire
 		(pts
@@ -3560,6 +3568,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 172.72) (xy 87.63 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cd2ae7b-d085-4f1c-a9fe-2a6e23407109")
+	)
+	(wire
+		(pts
 			(xy 173.99 142.24) (xy 176.53 142.24)
 		)
 		(stroke
@@ -3637,6 +3655,16 @@
 			(type default)
 		)
 		(uuid "a8448acb-116f-4ae1-b3d5-1115ae135588")
+	)
+	(wire
+		(pts
+			(xy 92.71 170.18) (xy 92.71 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a97b3bbf-661c-4a21-929b-6a0ca08ac618")
 	)
 	(wire
 		(pts
@@ -3890,6 +3918,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 170.18) (xy 90.17 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5a870e7-37fe-4ebc-bebe-89b83eb0f62d")
+	)
+	(wire
+		(pts
 			(xy 156.21 170.18) (xy 156.21 172.72)
 		)
 		(stroke
@@ -3927,6 +3965,28 @@
 			(type default)
 		)
 		(uuid "ffe4374f-f5e4-45d0-b1f1-68b51521d6b4")
+	)
+	(global_label "CAM_EN0"
+		(shape output)
+		(at 87.63 172.72 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "004236bc-1233-4130-84d3-9a242ee1082b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 87.63 184.1718 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "X24MIN"
 		(shape bidirectional)
@@ -4170,6 +4230,74 @@
 			)
 		)
 	)
+	(global_label "UART0_TX"
+		(shape output)
+		(at 97.79 172.72 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "38cd3b9e-3ce4-4e97-9d8a-92a178987b8d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 97.79 184.7161 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UART2_TX"
+		(shape output)
+		(at 74.93 172.72 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "3aa4f7a7-e38c-43d9-ac16-1cb653e7e9a1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 74.93 184.7161 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TWI0_SDA"
+		(shape bidirectional)
+		(at 92.71 172.72 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3e474b3f-6e9b-489f-a9d2-98901a3bf4ef")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 185.5855 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SVREF"
 		(shape bidirectional)
 		(at 179.07 134.62 0)
@@ -4205,6 +4333,29 @@
 		(uuid "401ddcd2-41fe-4486-b1a8-f5aee0bc7ece")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 102.87 183.9528 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UART0_RX"
+		(shape input)
+		(at 100.33 172.72 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "406a15ac-ecbc-4ba1-ab2a-ff54afbc4c3b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 185.0185 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4457,7 +4608,7 @@
 		)
 	)
 	(global_label "CSI-SCK"
-		(shape bidirectional)
+		(shape output)
 		(at 34.29 95.25 180)
 		(fields_autoplaced yes)
 		(effects
@@ -4468,7 +4619,7 @@
 		)
 		(uuid "6d34714e-97de-44eb-b908-7339c17b9eb4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.7873 95.25 0)
+			(at 22.8986 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4742,6 +4893,29 @@
 			)
 		)
 	)
+	(global_label "UART2_RX"
+		(shape input)
+		(at 77.47 172.72 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "9715b6d5-c9d8-4500-8ef7-684786fd4754")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 77.47 185.0185 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VCC-IO"
 		(shape bidirectional)
 		(at 130.81 29.21 90)
@@ -4760,6 +4934,29 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IRQ"
+		(shape input)
+		(at 82.55 172.72 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "9a99072d-79b5-4052-8fe5-cc53133488ee")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 82.55 178.9105 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -4897,7 +5094,7 @@
 		)
 	)
 	(global_label "VCC-RTC"
-		(shape bidirectional)
+		(shape input)
 		(at 154.94 29.21 90)
 		(fields_autoplaced yes)
 		(effects
@@ -4908,7 +5105,7 @@
 		)
 		(uuid "ce1af5fc-21ef-4c27-8ec9-07ae134e67d0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 154.94 16.4049 90)
+			(at 154.94 17.5162 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5138,6 +5335,29 @@
 			)
 		)
 	)
+	(global_label "TWI0_SCK"
+		(shape output)
+		(at 90.17 172.72 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "fc3ab35f-a12e-459b-b7bd-420e023d4984")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 90.17 184.6556 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
 		(lib_id "custom_chips:V3S-eLQFP128")
 		(at 107.95 102.87 0)
@@ -5238,6 +5458,7 @@
 		)
 		(pin "46"
 			(uuid "279ea46b-6fc8-41d5-b9e4-f87198d05766")
+			(alternate "TWI0_SDA")
 		)
 		(pin "114"
 			(uuid "b4ffca90-a416-4e4b-9c7a-0ba3a601e503")
@@ -5250,15 +5471,18 @@
 		)
 		(pin "45"
 			(uuid "70825d9f-e98e-49ec-925d-51ff6a32cd8f")
+			(alternate "TWI0_SCK")
 		)
 		(pin "48"
 			(uuid "2617fd84-d70a-4b32-b26e-c719c2ace516")
+			(alternate "UART0_TX")
 		)
 		(pin "113"
 			(uuid "6dc0a67a-a7d7-49eb-93dc-aa7b009e388a")
 		)
 		(pin "49"
 			(uuid "5ec19cbb-2507-4f04-a959-7c716b65ff3d")
+			(alternate "UART0_RX")
 		)
 		(pin "110"
 			(uuid "6aab1332-35e0-42cb-9156-565f0faddbeb")
@@ -5532,6 +5756,7 @@
 		)
 		(pin "39"
 			(uuid "475d6cba-ee9c-4fea-898e-e62c1f795a5d")
+			(alternate "UART2_TX")
 		)
 		(pin "119"
 			(uuid "6d15f4ea-111a-4121-b20a-0c6ebad86657")
@@ -5568,6 +5793,7 @@
 		)
 		(pin "40"
 			(uuid "c8cd279c-592e-4f40-871f-ba93b8393626")
+			(alternate "UART2_RX")
 		)
 		(pin "122"
 			(uuid "e1d3b022-0e6c-4626-9eb2-7e80218cf152")

@@ -52,7 +52,7 @@
 		)
 	)
 	(sheet
-		(at 16.51 87.63)
+		(at 16.51 110.49)
 		(size 40.64 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -68,7 +68,7 @@
 		)
 		(uuid "47962aac-64be-4928-9c9c-c3ab3aab91c0")
 		(property "Sheetname" "V3s"
-			(at 16.51 86.9184 0)
+			(at 16.51 109.7784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -77,7 +77,7 @@
 			)
 		)
 		(property "Sheetfile" "V3s.kicad_sch"
-			(at 16.51 104.7246 0)
+			(at 16.51 127.5846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -109,7 +109,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "63007821-20b4-4692-9a5a-85c4738356da")
-		(property "Sheetname" "Power"
+		(property "Sheetname" "AXP203"
 			(at 16.51 62.7884 0)
 			(effects
 				(font
@@ -173,6 +173,48 @@
 			(project "CameraPCB"
 				(path "/400c1603-202c-4359-a830-d2f0d06dd3ce"
 					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 16.51 87.63)
+		(size 40.64 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f4829b1f-636b-49a4-aa22-dc0b023f0960")
+		(property "Sheetname" "3V3_5V0"
+			(at 16.51 86.9184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 16.51 104.7246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CameraPCB"
+				(path "/400c1603-202c-4359-a830-d2f0d06dd3ce"
+					(page "6")
 				)
 			)
 		)
