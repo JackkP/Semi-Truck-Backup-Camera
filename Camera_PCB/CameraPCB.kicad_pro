@@ -584,7 +584,7 @@
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
           "show": true
@@ -605,24 +605,6 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Pins",
-          "name": "Sim.Pins",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "DPN",
-          "name": "DPN",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Distributor",
-          "name": "Distributor",
           "show": false
         }
       ],
@@ -679,12 +661,20 @@
       "Root"
     ],
     [
+      "4f1433c9-b97e-4b60-ad96-8bb3bb8cf176",
+      "Oscillators"
+    ],
+    [
+      "a4c77a59-a27d-4681-b324-24cee2a545f5",
+      "SD_Card"
+    ],
+    [
       "1157294a-1719-49ab-b853-49534ca658dc",
-      "CSI_USB_SD_OSC"
+      "Camera"
     ],
     [
       "8aea63de-025a-40df-acd1-ce0de9a2cf46",
-      "DC_CAP_RAIL_TIES"
+      "Voltages"
     ],
     [
       "63007821-20b4-4692-9a5a-85c4738356da",
