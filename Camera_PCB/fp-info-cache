@@ -1,4 +1,4 @@
-24740891117296716
+24744415097967766
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -28,7 +28,21 @@ IC_TPS63020DSJT
 30
 30
 BackupCamCustomParts
-OSC_ECS-2520S25-250-FN-TR
+RGB_LED IN-S66TFT5R5G5B
+
+
+0
+6
+6
+BackupCamCustomParts
+XTAL_ECS-.327-12.5-38-TR
+
+
+0
+4
+4
+BackupCamCustomParts
+XTAL_ECS-240-12-36-AGN-TR
 
 
 0

@@ -894,7 +894,7 @@
 				)
 			)
 			(pin power_in line
-				(at 19.05 -34.29 180)
+				(at 19.05 -36.83 180)
 				(length 2.54)
 				(name "LDO3IN"
 					(effects
@@ -912,7 +912,7 @@
 				)
 			)
 			(pin power_out line
-				(at 19.05 -36.83 180)
+				(at 19.05 -39.37 180)
 				(length 2.54)
 				(name "LDO3"
 					(effects
