@@ -34,7 +34,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "camera.kicad_sch"
+		(property "Sheetfile" "CSI_USB_SD_OSC.kicad_sch"
 			(at 16.51 36.1446 0)
 			(effects
 				(font
@@ -118,7 +118,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Power.kicad_sch"
+		(property "Sheetfile" "AXP203.kicad_sch"
 			(at 16.51 81.8646 0)
 			(effects
 				(font
@@ -160,7 +160,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Voltages.kicad_sch"
+		(property "Sheetfile" "DC_CAP_RAIL_TIES.kicad_sch"
 			(at 16.51 57.7346 0)
 			(effects
 				(font
@@ -202,7 +202,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "untitled.kicad_sch"
+		(property "Sheetfile" "3V3_5V0.kicad_sch"
 			(at 16.51 104.7246 0)
 			(effects
 				(font
