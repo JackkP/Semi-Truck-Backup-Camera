@@ -2300,14 +2300,13 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify right)
 		)
 		(uuid "9db4663f-d51a-4238-8d78-6e197456aaa7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 87.8579 66.04 0)
+			(at 88.3339 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2411,7 +2410,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 145.796 110.744 90)
 			(effects
 				(font
@@ -2420,7 +2419,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 144.78 110.49 0)
 			(effects
 				(font
@@ -2430,6 +2429,24 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 144.78 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "RC0603FR-07768KL"
+			(at 144.78 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
 			(at 144.78 110.49 0)
 			(effects
 				(font
@@ -2490,7 +2507,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71E106KE15-01.pdf"
 			(at 190.5 54.61 0)
 			(effects
 				(font
@@ -2508,20 +2525,22 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "GRM21BZ71E106KE15L"
 			(at 190.5 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "DigiKey"
 			(at 190.5 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -2735,7 +2754,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "Digikey"
+		(property "Distributor" "DigiKey"
 			(at 123.19 109.22 0)
 			(effects
 				(font
@@ -2823,7 +2842,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 145.796 66.294 90)
 			(effects
 				(font
@@ -2832,7 +2851,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 144.78 66.04 0)
 			(effects
 				(font
@@ -2842,6 +2861,24 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 144.78 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "RC0603FR-10180KL"
+			(at 144.78 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
 			(at 144.78 66.04 0)
 			(effects
 				(font
@@ -3033,7 +3070,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71E106KE15-01.pdf"
 			(at 167.64 110.49 0)
 			(effects
 				(font
@@ -3051,20 +3088,22 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "GRM21BZ71E106KE15L"
 			(at 167.64 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "DigiKey"
 			(at 167.64 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3119,7 +3158,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71E106KE15-01.pdf"
 			(at 190.5 110.49 0)
 			(effects
 				(font
@@ -3137,20 +3176,22 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "GRM21BZ71E106KE15L"
 			(at 190.5 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "DigiKey"
 			(at 190.5 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3196,7 +3237,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 145.796 122.174 90)
 			(effects
 				(font
@@ -3205,7 +3246,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 144.78 121.92 0)
 			(effects
 				(font
@@ -3215,6 +3256,24 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 144.78 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "RC0603FR-07137KL"
+			(at 144.78 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
 			(at 144.78 121.92 0)
 			(effects
 				(font
@@ -3320,6 +3379,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "10u"
@@ -3329,6 +3389,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
@@ -3340,7 +3401,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71E106KE15-01.pdf"
 			(at 201.93 54.61 0)
 			(effects
 				(font
@@ -3358,20 +3419,22 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "GRM21BZ71E106KE15L"
 			(at 201.93 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "DigiKey"
 			(at 201.93 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3604,7 +3667,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 91.44 132.08 0)
 			(effects
 				(font
@@ -3622,7 +3685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01.pdf"
 			(at 99.06 130.81 0)
 			(effects
 				(font
@@ -3640,20 +3703,22 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "GRM188R72A104KA35D"
 			(at 99.06 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "DigiKey"
 			(at 99.06 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3801,7 +3866,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "Digikey"
+		(property "Distributor" "DigiKey"
 			(at 123.19 53.34 0)
 			(effects
 				(font
@@ -3887,7 +3952,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Murata_DFE201610P"
 			(at 124.46 40.64 0)
 			(effects
 				(font
@@ -3896,7 +3961,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/P02/J(E)TE243A-0001.pdf"
 			(at 124.46 40.64 0)
 			(effects
 				(font
@@ -3914,20 +3979,22 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "DFE201610E-1R0M=P2"
 			(at 124.46 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "DigiKey"
 			(at 124.46 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3982,7 +4049,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71E106KE15-01.pdf"
 			(at 167.64 54.61 0)
 			(effects
 				(font
@@ -4000,20 +4067,22 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "GRM21BZ71E106KE15L"
 			(at 167.64 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "DigiKey"
 			(at 167.64 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -4068,7 +4137,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71E106KE15-01.pdf"
 			(at 179.07 54.61 0)
 			(effects
 				(font
@@ -4086,20 +4155,22 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "GRM21BZ71E106KE15L"
 			(at 179.07 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "DigiKey"
 			(at 179.07 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -4154,7 +4225,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71E106KE15-01.pdf"
 			(at 201.93 110.49 0)
 			(effects
 				(font
@@ -4172,20 +4243,22 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "GRM21BZ71E106KE15L"
 			(at 201.93 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "DigiKey"
 			(at 201.93 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -4240,7 +4313,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71A226ME15-01.pdf"
 			(at 97.79 53.34 0)
 			(effects
 				(font
@@ -4258,20 +4331,22 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "GRM21BZ71A226ME15L"
 			(at 97.79 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "DigiKey"
 			(at 97.79 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -4437,15 +4512,17 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 91.44 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
@@ -4457,7 +4534,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01.pdf"
 			(at 99.06 74.93 0)
 			(effects
 				(font
@@ -4475,20 +4552,22 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "GRM188R72A104KA35D"
 			(at 99.06 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "DigiKey"
 			(at 99.06 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -4534,7 +4613,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 145.796 54.864 90)
 			(effects
 				(font
@@ -4543,7 +4622,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 144.78 54.61 0)
 			(effects
 				(font
@@ -4553,6 +4632,24 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 144.78 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "RC0603FR-071M62L"
+			(at 144.78 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
 			(at 144.78 54.61 0)
 			(effects
 				(font
@@ -4679,7 +4776,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71A226ME15-01.pdf"
 			(at 97.79 109.22 0)
 			(effects
 				(font
@@ -4697,20 +4794,22 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "GRM21BZ71A226ME15L"
 			(at 97.79 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "DigiKey"
 			(at 97.79 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -4745,6 +4844,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "10u"
@@ -4754,6 +4854,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
@@ -4765,7 +4866,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71E106KE15-01.pdf"
 			(at 179.07 110.49 0)
 			(effects
 				(font
@@ -4783,20 +4884,22 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "GRM21BZ71E106KE15L"
 			(at 179.07 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "DigiKey"
 			(at 179.07 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -4983,7 +5086,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71E106KE15-01.pdf"
 			(at 156.21 54.61 0)
 			(effects
 				(font
@@ -5001,20 +5104,22 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "GRM21BZ71E106KE15L"
 			(at 156.21 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "DigiKey"
 			(at 156.21 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -5069,7 +5174,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71E106KE15-01.pdf"
 			(at 156.21 110.49 0)
 			(effects
 				(font
@@ -5087,20 +5192,22 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "GRM21BZ71E106KE15L"
 			(at 156.21 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "DigiKey"
 			(at 156.21 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -5144,7 +5251,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Murata_DFE201610P"
 			(at 124.46 96.52 0)
 			(effects
 				(font
@@ -5153,7 +5260,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/P02/J(E)TE243A-0001.pdf"
 			(at 124.46 96.52 0)
 			(effects
 				(font
@@ -5171,20 +5278,22 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "DFE201610E-1R0M=P2"
 			(at 124.46 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "DigiKey"
 			(at 124.46 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
