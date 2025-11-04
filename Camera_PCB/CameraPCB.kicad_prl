@@ -16,17 +16,17 @@
       "zones": 0.6
     },
     "selection_filter": {
-      "dimensions": true,
+      "dimensions": false,
       "footprints": true,
-      "graphics": true,
-      "keepouts": true,
+      "graphics": false,
+      "keepouts": false,
       "lockedItems": false,
-      "otherItems": true,
-      "pads": true,
-      "text": true,
-      "tracks": true,
-      "vias": true,
-      "zones": true
+      "otherItems": false,
+      "pads": false,
+      "text": false,
+      "tracks": false,
+      "vias": false,
+      "zones": false
     },
     "visible_items": [
       "vias",
@@ -49,7 +49,7 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "00000000_00000000_0fffffff_fffffaab",
+    "visible_layers": "00000000_00000000_0ffffff5_fffffaab",
     "zone_display_mode": 0
   },
   "git": {
@@ -128,15 +128,15 @@
   },
   "schematic": {
     "selection_filter": {
-      "graphics": false,
-      "images": false,
-      "labels": false,
+      "graphics": true,
+      "images": true,
+      "labels": true,
       "lockedItems": false,
-      "otherItems": false,
-      "pins": false,
+      "otherItems": true,
+      "pins": true,
       "symbols": true,
-      "text": false,
-      "wires": false
+      "text": true,
+      "wires": true
     }
   }
 }

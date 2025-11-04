@@ -45,7 +45,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Allwinner V3S ARM CortexTM-A7 CPU 1.2GHz DVR/IPC SOC w/ integrated 64Mbit RAM"
 				(at 0 0 0)
 				(effects
 					(font
@@ -460,7 +460,7 @@
 						)
 					)
 					(alternate "CSI_SDA" bidirectional line)
-					(alternate "TWI_SDA" bidirectional line)
+					(alternate "TWI1_SDA" bidirectional line)
 					(alternate "UART1_RX" bidirectional line)
 				)
 				(pin bidirectional line
@@ -4764,7 +4764,7 @@
 			)
 		)
 	)
-	(global_label "CSI-SCK"
+	(global_label "CSI_SCK"
 		(shape output)
 		(at 34.29 95.25 180)
 		(fields_autoplaced yes)
@@ -4776,7 +4776,7 @@
 		)
 		(uuid "6d34714e-97de-44eb-b908-7339c17b9eb4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 22.8986 95.25 0)
+			(at 23.5034 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5671,7 +5671,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Allwinner V3S ARM CortexTM-A7 CPU 1.2GHz DVR/IPC SOC w/ integrated 64Mbit RAM"
 			(at 107.95 102.87 0)
 			(effects
 				(font
@@ -5686,6 +5686,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Distributor" "AliExpress"
@@ -5694,6 +5695,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "115"

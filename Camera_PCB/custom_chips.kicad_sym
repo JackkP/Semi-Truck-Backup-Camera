@@ -101,7 +101,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin power_out line
 				(at -19.05 43.18 0)
 				(length 2.54)
 				(name "IPSOUT"
@@ -119,7 +119,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin power_out line
 				(at -19.05 40.64 0)
 				(length 2.54)
 				(name "IPSOUT"
@@ -821,7 +821,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin power_out line
 				(at 19.05 -13.97 180)
 				(length 2.54)
 				(name "LDO1"
@@ -929,7 +929,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 19.05 -45.72 180)
 				(length 2.54)
 				(name "PWROK"
@@ -1293,6 +1293,359 @@
 					(effects
 						(font
 							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "TPS63020"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 23.368 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS6302x"
+			(at 0.254 20.828 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "BackupCamCustomParts:IC_TPS63020DSJT"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps63020.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1761738729604&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftps63020"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "IC REG BUCK BST ADJ 3.5A 14VSON"
+			(at 0 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "TPS63020DSJT"
+			(at 0 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at 0 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TPS63020_0_1"
+			(rectangle
+				(start -12.7 15.24)
+				(end 12.7 -15.24)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type color)
+					(color 255 255 194 1)
+				)
+			)
+		)
+		(symbol "TPS63020_1_1"
+			(pin power_in line
+				(at -15.24 10.16 0)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 6.35 0)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin free line
+				(at -15.24 -2.54 0)
+				(length 2.54)
+				(name "VINA"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -6.35 0)
+				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -10.16 0)
+				(length 2.54)
+				(name "PS/SYNC"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -8.89 17.78 270)
+				(length 2.54)
+				(name "L2"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -6.35 -17.78 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -5.08 17.78 270)
+				(length 2.54)
+				(name "L2"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -17.78 90)
+				(length 2.54)
+				(name "PGND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 5.08 17.78 270)
+				(length 2.54)
+				(name "L1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 6.35 -17.78 90)
+				(length 2.54)
+				(name "PG"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 8.89 17.78 270)
+				(length 2.54)
+				(name "L1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 15.24 10.16 180)
+				(length 2.54)
+				(name "VOUT"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 15.24 5.08 180)
+				(length 2.54)
+				(name "VOUT"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 0 180)
+				(length 2.54)
+				(name "FB"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.016 1.016)
 						)
 					)
 				)
@@ -1755,7 +2108,7 @@
 					)
 				)
 				(alternate "CSI_SDA" bidirectional line)
-				(alternate "TWI_SDA" bidirectional line)
+				(alternate "TWI1_SDA" bidirectional line)
 				(alternate "UART1_RX" bidirectional line)
 			)
 			(pin bidirectional line
@@ -4389,33 +4742,24 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "TF_Card"
-			(at -1.27 8.128 0)
+		(property "Reference" "J3"
+			(at -0.254 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" ""
-			(at 0 0 0)
+		(property "Value" "SDA"
+			(at -0.254 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
+		(property "Footprint" "BackupCamCustomParts:AMPHENOL_10067099-200LF"
+			(at -2.54 5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4423,8 +4767,35 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 0)
+		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_sdmemorycard.pdf"
+			(at -2.54 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CONN MICRO SD CARD R/A SMD"
+			(at -2.54 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "10067099-200LF "
+			(at -2.54 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at -2.54 5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4434,8 +4805,8 @@
 		)
 		(symbol "micro-sd-tf_1_1"
 			(rectangle
-				(start -5.08 6.35)
-				(end 11.43 -16.51)
+				(start -7.62 11.43)
+				(end 7.62 -11.43)
 				(stroke
 					(width 0)
 					(type solid)
@@ -4445,7 +4816,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -8.89 3.81 0)
+				(at -11.43 8.89 0)
 				(length 3.81)
 				(name "DAT2"
 					(effects
@@ -4463,7 +4834,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -8.89 1.27 0)
+				(at -11.43 6.35 0)
 				(length 3.81)
 				(name "DAT3/CS"
 					(effects
@@ -4481,7 +4852,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -8.89 -1.27 0)
+				(at -11.43 3.81 0)
 				(length 3.81)
 				(name "CMD/MOSI"
 					(effects
@@ -4499,7 +4870,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -8.89 -3.81 0)
+				(at -11.43 1.27 0)
 				(length 3.81)
 				(name "CLK"
 					(effects
@@ -4517,7 +4888,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -8.89 -6.35 0)
+				(at -11.43 -1.27 0)
 				(length 3.81)
 				(name "DAT0/MISO"
 					(effects
@@ -4535,7 +4906,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -8.89 -8.89 0)
+				(at -11.43 -3.81 0)
 				(length 3.81)
 				(name "DAT1"
 					(effects
@@ -4552,8 +4923,80 @@
 					)
 				)
 			)
+			(pin input line
+				(at 0 -13.97 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "S1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 2.54 -13.97 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "S2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 7.62 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "DET_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 5.08 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "DET_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
-				(at 15.24 -11.43 180)
+				(at 11.43 -6.35 180)
 				(length 3.81)
 				(name "VDD"
 					(effects
@@ -4571,7 +5014,7 @@
 				)
 			)
 			(pin power_in line
-				(at 15.24 -13.97 180)
+				(at 11.43 -8.89 180)
 				(length 3.81)
 				(name "GND"
 					(effects
