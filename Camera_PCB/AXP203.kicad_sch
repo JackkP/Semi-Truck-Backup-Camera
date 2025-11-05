@@ -4605,12 +4605,6 @@
 		(uuid "26b30466-1374-417a-8d1c-eff0b921431e")
 	)
 	(junction
-		(at 241.3 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "314d2365-0c22-4dac-8568-a308ecfc6568")
-	)
-	(junction
 		(at 156.21 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4765,6 +4759,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aa235af6-ffac-4aa5-a609-4f8efe3017b7")
+	)
+	(junction
+		(at 234.95 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b11511d9-68d9-48c3-a8b2-074917f186a9")
 	)
 	(junction
 		(at 153.67 97.79)
@@ -5650,6 +5650,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 118.11) (xy 236.22 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55c32b20-3535-4355-9aef-89e5513f2b5b")
+	)
+	(wire
+		(pts
 			(xy 54.61 111.76) (xy 54.61 114.3)
 		)
 		(stroke
@@ -5657,6 +5667,16 @@
 			(type default)
 		)
 		(uuid "57344f38-2aae-431c-901e-f6ad3d98561f")
+	)
+	(wire
+		(pts
+			(xy 234.95 120.65) (xy 234.95 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5963a0e5-9893-450c-a231-e8a4994656b5")
 	)
 	(wire
 		(pts
@@ -5807,16 +5827,6 @@
 			(type default)
 		)
 		(uuid "6a57b470-128b-4609-9a36-8f28a72566e9")
-	)
-	(wire
-		(pts
-			(xy 236.22 118.11) (xy 241.3 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a5e797e-c80b-4680-aba6-9fbfb4de29f0")
 	)
 	(wire
 		(pts
@@ -6710,7 +6720,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 118.11) (xy 231.14 118.11)
+			(xy 226.06 118.11) (xy 234.95 118.11)
 		)
 		(stroke
 			(width 0)
@@ -7656,7 +7666,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
-		(at 233.68 118.11 0)
+		(at 238.76 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7664,7 +7674,7 @@
 		(dnp no)
 		(uuid "07af6cee-38b2-4fcb-bad0-31e20aa70e39")
 		(property "Reference" "JP2"
-			(at 233.68 119.38 0)
+			(at 238.76 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7672,7 +7682,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 233.68 115.57 0)
+			(at 238.76 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7680,7 +7690,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 233.68 118.11 0)
+			(at 238.76 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7689,7 +7699,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 233.68 118.11 0)
+			(at 238.76 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7698,7 +7708,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, bridged"
-			(at 233.68 118.11 0)
+			(at 238.76 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8849,7 +8859,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 241.3 118.11 270)
+		(at 234.95 120.65 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8857,25 +8867,25 @@
 		(dnp no)
 		(uuid "344719ff-2f33-4763-8f81-2067f73358e7")
 		(property "Reference" "TP7"
-			(at 246.38 116.84 90)
+			(at 236.22 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "3.0V"
-			(at 246.38 119.38 90)
+			(at 236.22 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 241.3 123.19 0)
+			(at 229.87 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8884,7 +8894,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 241.3 123.19 0)
+			(at 229.87 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8893,7 +8903,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 241.3 118.11 0)
+			(at 234.95 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
