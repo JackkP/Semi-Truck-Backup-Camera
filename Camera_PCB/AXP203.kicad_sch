@@ -4397,6 +4397,18 @@
 		)
 		(uuid "52928acf-c57d-4ef8-ac4d-11ceae88956a")
 	)
+	(text "PGOOD is high\nactive open\ndrain"
+		(exclude_from_sim no)
+		(at 67.31 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left)
+		)
+		(uuid "71d2a5d7-9496-4387-946b-5c4dcb7077f2")
+	)
 	(text "Connect VBUS to ACIN instead of\nVBUS pin because VBUS pin is\nLimited to 500mA"
 		(exclude_from_sim no)
 		(at 110.49 71.12 0)
@@ -4419,6 +4431,17 @@
 			(justify left top)
 		)
 		(uuid "98638fec-d949-4094-9695-7f014b438155")
+	)
+	(text "CHGLED is open drain NMOS\nLow active"
+		(exclude_from_sim no)
+		(at 113.03 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "98f82c61-0de9-4049-a74f-0b74f811272f")
 	)
 	(text "use 1nF caps as filter caps\nfor feedback pins\nplace close to IC"
 		(exclude_from_sim no)
@@ -4741,6 +4764,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a627812a-349b-4640-93b4-cfd25dd94f70")
+	)
+	(junction
+		(at 59.69 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6a09c76-4dd8-4b83-be09-34fb7bd8a7f8")
 	)
 	(junction
 		(at 143.51 123.19)
@@ -5580,6 +5609,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 120.65) (xy 63.5 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4abad267-68fb-444e-b8c8-bbfbe3ef90a8")
+	)
+	(wire
+		(pts
 			(xy 194.31 88.9) (xy 212.09 88.9)
 		)
 		(stroke
@@ -6010,7 +6049,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 119.38) (xy 59.69 121.92)
+			(xy 59.69 119.38) (xy 59.69 120.65)
 		)
 		(stroke
 			(width 0)
@@ -6317,6 +6356,16 @@
 			(type default)
 		)
 		(uuid "a4ee8bca-5d30-4af9-bf2d-f44be7455eca")
+	)
+	(wire
+		(pts
+			(xy 59.69 120.65) (xy 59.69 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4ef203e-2f08-431c-9bfc-00b06237189f")
 	)
 	(wire
 		(pts
@@ -7141,6 +7190,29 @@
 		)
 	)
 	(global_label "PGOOD"
+		(shape input)
+		(at 63.5 120.65 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left)
+		)
+		(uuid "70388d3a-de8e-48ba-9318-e22c9d7f5f1b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.9562 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PGOOD"
 		(shape output)
 		(at 199.39 142.24 0)
 		(fields_autoplaced yes)
@@ -7154,29 +7226,6 @@
 		(uuid "8772cc60-fc56-4e1f-9a7a-6e7b21ea8da8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 208.8462 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "PGOOD"
-		(shape input)
-		(at 59.69 111.76 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left)
-		)
-		(uuid "9d57797a-aebd-4fd7-9f5f-a73cc2d24058")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 59.69 102.3038 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10202,72 +10251,6 @@
 		)
 	)
 	(symbol
-		(lib_id "custom_chips:VIPS")
-		(at 54.61 111.76 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5a12e013-9472-46bf-8a96-c6535f390af2")
-		(property "Reference" "#PWR076"
-			(at 54.61 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VIPS"
-			(at 54.61 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 54.61 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 54.61 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VISP\""
-			(at 54.61 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0a4113a3-5719-49ad-a125-3cc9d53f8f72")
-		)
-		(instances
-			(project "CameraPCB"
-				(path "/400c1603-202c-4359-a830-d2f0d06dd3ce/63007821-20b4-4692-9a5a-85c4738356da"
-					(reference "#PWR076")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 119.38 154.94 90)
 		(unit 1)
@@ -12417,6 +12400,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 54.61 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "874970fc-52bd-4f6d-b36b-bc4689946055")
+		(property "Reference" "#PWR042"
+			(at 54.61 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 54.61 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 54.61 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4d647759-d04f-407e-82c6-10cd7dc01192")
+		)
+		(instances
+			(project "CameraPCB"
+				(path "/400c1603-202c-4359-a830-d2f0d06dd3ce/63007821-20b4-4692-9a5a-85c4738356da"
+					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "custom_chips:VINT")
 		(at 153.67 93.98 0)
 		(unit 1)
@@ -13865,6 +13913,71 @@
 			(project "CameraPCB"
 				(path "/400c1603-202c-4359-a830-d2f0d06dd3ce/63007821-20b4-4692-9a5a-85c4738356da"
 					(reference "#PWR097")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 59.69 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bb5c0f09-3dbc-412c-8e80-192b6767e60e")
+		(property "Reference" "#PWR043"
+			(at 59.69 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 59.69 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 59.69 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c44adc9-67ce-4564-a58d-5a86e601fba3")
+		)
+		(instances
+			(project "CameraPCB"
+				(path "/400c1603-202c-4359-a830-d2f0d06dd3ce/63007821-20b4-4692-9a5a-85c4738356da"
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
