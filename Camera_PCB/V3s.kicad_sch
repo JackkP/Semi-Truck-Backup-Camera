@@ -1013,6 +1013,24 @@
 					(alternate "CSI_D1" bidirectional line)
 					(alternate "LCD_D3" bidirectional line)
 				)
+				(pin power_in line
+					(at -57.15 71.12 270)
+					(length 5.08)
+					(name "EGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "129"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin bidirectional line
 					(at -57.15 -66.04 90)
 					(length 5.08)
@@ -4016,6 +4034,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 21.59) (xy 50.8 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1f64ce8-26bc-4f59-b780-c772950581a5")
+	)
+	(wire
+		(pts
 			(xy 95.25 170.18) (xy 95.25 172.72)
 		)
 		(stroke
@@ -5837,6 +5865,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 50.8 21.59 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a03fa594-8d6f-4684-af9b-f26d57b452e9")
+		(property "Reference" "#PWR044"
+			(at 50.8 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 50.8 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 50.8 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a3cf8c6d-2f3e-4077-9b27-9d9bf84a2a6f")
+		)
+		(instances
+			(project "CameraPCB"
+				(path "/400c1603-202c-4359-a830-d2f0d06dd3ce/47962aac-64be-4928-9c9c-c3ab3aab91c0"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 226.06 110.49 0)
 		(unit 1)
@@ -6368,6 +6462,9 @@
 		)
 		(pin "35"
 			(uuid "64f91ea0-330b-413f-95eb-506e0c6abeb2")
+		)
+		(pin "129"
+			(uuid "8ab64394-76d6-45d6-ab68-8c2069ab7a3a")
 		)
 		(instances
 			(project "CameraPCB"

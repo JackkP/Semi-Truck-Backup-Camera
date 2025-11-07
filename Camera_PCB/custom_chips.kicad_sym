@@ -2578,6 +2578,24 @@
 				(alternate "CSI_D1" bidirectional line)
 				(alternate "LCD_D3" bidirectional line)
 			)
+			(pin power_in line
+				(at -57.15 71.12 270)
+				(length 5.08)
+				(name "EGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "129"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin bidirectional line
 				(at -57.15 -66.04 90)
 				(length 5.08)
