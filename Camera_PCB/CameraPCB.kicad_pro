@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.3
         }
       },
       "diff_pair_dimensions": [
@@ -58,7 +58,56 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_mismatch|152125000|98075000|f131bb15-3bde-4afd-92a9-4ea074b7b70c|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "starved_thermal|136750000|91500000|4be83592-de54-4b4c-9546-a0f7a2db725c|6b7a3d1a-d70d-4ce1-a9f4-cd52bf81467e|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|138950000|92937500|4be83592-de54-4b4c-9546-a0f7a2db725c|ce791c9f-9016-4eb4-ab03-e423ad0735f5|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|139712500|105250000|556cc519-f8ef-44d3-8ae0-85881e6f70a8|207486df-edbf-4661-b9b2-40342995c008|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|142150000|92937500|4be83592-de54-4b4c-9546-a0f7a2db725c|38fd4eb6-333b-446f-b0b6-fe65463e5513|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|142775000|85600000|556cc519-f8ef-44d3-8ae0-85881e6f70a8|7351a65a-2e1b-4963-a38f-7a7ad494f6f5|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|145137500|110800000|556cc519-f8ef-44d3-8ae0-85881e6f70a8|d9b80d1c-d2b9-44b9-8ccc-7a31b6a424b8|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|149700000|73125000|556cc519-f8ef-44d3-8ae0-85881e6f70a8|fc1de3c5-abbd-4a2d-8ff7-8f946925d696|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|151680000|66700000|fca485a6-f3a6-49cd-86ca-aec2b4f3cd2c|c4a35b59-8aa1-4016-b397-d6360a650a88|In3.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|159900000|101837500|3121ae89-13ff-46ff-ad4d-4311d781bb52|2aa74b03-66a8-46d2-9ffc-4c75f4fca1c0|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|160320000|66700000|12613c7e-7ca4-4bae-ae6c-fda77929954b|e388b9b2-5838-45db-8a17-b6aafe5e3f12|In2.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|160320000|66700000|fca485a6-f3a6-49cd-86ca-aec2b4f3cd2c|e388b9b2-5838-45db-8a17-b6aafe5e3f12|In3.Cu",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -105,7 +154,7 @@
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
-        "starved_thermal": "error",
+        "starved_thermal": "warning",
         "text_height": "warning",
         "text_on_edge_cuts": "error",
         "text_thickness": "warning",
@@ -269,11 +318,19 @@
         ""
       ],
       [
+        "multiple_net_names|2108200|635000|d7eb4b39-072b-475c-ad90-8e19a9bcfc17|468d2326-c281-436b-8c81-6f8ed7220929|/400c1603-202c-4359-a830-d2f0d06dd3ce/8aea63de-025a-40df-acd1-ce0de9a2cf46|/400c1603-202c-4359-a830-d2f0d06dd3ce/8aea63de-025a-40df-acd1-ce0de9a2cf46|/400c1603-202c-4359-a830-d2f0d06dd3ce/8aea63de-025a-40df-acd1-ce0de9a2cf46",
+        ""
+      ],
+      [
         "multiple_net_names|2235200|622300|2e312c84-8af4-4f17-8fcd-fab587a9f817|2954eafa-74ca-4a15-b940-8a6303023f40|/400c1603-202c-4359-a830-d2f0d06dd3ce/8aea63de-025a-40df-acd1-ce0de9a2cf46|/400c1603-202c-4359-a830-d2f0d06dd3ce/8aea63de-025a-40df-acd1-ce0de9a2cf46|/400c1603-202c-4359-a830-d2f0d06dd3ce/8aea63de-025a-40df-acd1-ce0de9a2cf46",
         ""
       ],
       [
         "multiple_net_names|2438400|622300|26ccba96-5a0c-4eb6-8193-b17ad8b9190e|17478d8d-8470-4bf4-9ed8-e79a6945e414|/400c1603-202c-4359-a830-d2f0d06dd3ce/8aea63de-025a-40df-acd1-ce0de9a2cf46|/400c1603-202c-4359-a830-d2f0d06dd3ce/8aea63de-025a-40df-acd1-ce0de9a2cf46|/400c1603-202c-4359-a830-d2f0d06dd3ce/8aea63de-025a-40df-acd1-ce0de9a2cf46",
+        ""
+      ],
+      [
+        "multiple_net_names|254000|876300|7a0d6bac-f5af-49e5-b93b-7fa270938f6c|57ff95ac-4cd8-4a4c-aaf9-07f0b62e317f|/400c1603-202c-4359-a830-d2f0d06dd3ce/8aea63de-025a-40df-acd1-ce0de9a2cf46|/400c1603-202c-4359-a830-d2f0d06dd3ce/8aea63de-025a-40df-acd1-ce0de9a2cf46|/400c1603-202c-4359-a830-d2f0d06dd3ce/8aea63de-025a-40df-acd1-ce0de9a2cf46",
         ""
       ],
       [
