@@ -588,8 +588,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "BT"
-				(at 2.54 2.54 0)
+			(property "Reference" "BT1"
+				(at 5.08 3.302 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -597,8 +597,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Battery_Cell"
-				(at 2.54 0 0)
+			(property "Value" "B2B-PH-SM4-TB"
+				(at 5.08 0.762 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -606,7 +606,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical"
 				(at 0 1.524 90)
 				(effects
 					(font
@@ -615,7 +615,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
 				(at 0 1.524 90)
 				(effects
 					(font
@@ -625,6 +625,24 @@
 				)
 			)
 			(property "Description" "Single-cell battery"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "DPN" "B2B-PH-SM4-TB"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Distributor" "DigiKey"
 				(at 0 0 0)
 				(effects
 					(font
@@ -713,8 +731,28 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 3.81 2.54) (xy 3.81 -1.27) (xy 2.54 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
 			(symbol "Battery_Cell_1_1"
+				(text "Mounting"
+					(at 4.318 0.508 900)
+					(effects
+						(font
+							(size 0.4 0.4)
+						)
+					)
+				)
 				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
@@ -744,6 +782,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 -2.54 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4694,6 +4750,12 @@
 		(uuid "6b70aa3d-8f97-4897-9e68-c9068025914a")
 	)
 	(junction
+		(at 236.22 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6bb08180-ea91-40d9-a0f1-0018db1d81a9")
+	)
+	(junction
 		(at 226.06 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5179,6 +5241,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 59.69) (xy 240.03 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ffba406-fa54-40c3-a42a-66279b1fbeac")
+	)
+	(wire
+		(pts
 			(xy 154.94 147.32) (xy 154.94 142.24)
 		)
 		(stroke
@@ -5579,7 +5651,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 63.5) (xy 236.22 59.69)
+			(xy 236.22 63.5) (xy 236.22 60.96)
 		)
 		(stroke
 			(width 0)
@@ -5636,6 +5708,16 @@
 			(type default)
 		)
 		(uuid "4cc1a13f-b2b0-4dbf-85c9-b5c841763966")
+	)
+	(wire
+		(pts
+			(xy 240.03 60.96) (xy 236.22 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d34baab-0f6a-40c8-b90d-bce4a133ac67")
 	)
 	(wire
 		(pts
@@ -6756,6 +6838,16 @@
 			(type default)
 		)
 		(uuid "d2c21368-65d8-43b0-b91f-594bdb8a61bd")
+	)
+	(wire
+		(pts
+			(xy 236.22 60.96) (xy 236.22 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d509b711-8086-43c5-8796-b99c34f36fab")
 	)
 	(wire
 		(pts
@@ -7949,7 +8041,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "3.0V"
+		(property "Value" "NVEN"
 			(at 143.51 138.43 0)
 			(effects
 				(font
@@ -8924,7 +9016,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "3.0V"
+		(property "Value" "3V0"
 			(at 236.22 125.73 0)
 			(effects
 				(font
@@ -9435,7 +9527,7 @@
 		(fields_autoplaced yes)
 		(uuid "431347b0-4f20-4f47-bb96-0d81b46d0183")
 		(property "Reference" "BT1"
-			(at 240.03 54.0384 0)
+			(at 241.3 53.848 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9444,7 +9536,7 @@
 			)
 		)
 		(property "Value" "B2B-PH-SM4-TB"
-			(at 240.03 56.5784 0)
+			(at 241.3 56.388 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9461,7 +9553,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
 			(at 236.22 55.626 90)
 			(effects
 				(font
@@ -9502,6 +9594,9 @@
 		)
 		(pin "1"
 			(uuid "54674059-0c3a-45c4-addc-7ca850a2c39a")
+		)
+		(pin "MP"
+			(uuid "c1b68c10-d067-4ce6-818a-5679ea798eb4")
 		)
 		(instances
 			(project "CameraPCB"

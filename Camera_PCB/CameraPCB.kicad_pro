@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 8.0,
-          "width": 8.0
+          "height": 3.0,
+          "width": 1.6
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -105,6 +105,14 @@
         ],
         [
           "starved_thermal|160320000|66700000|fca485a6-f3a6-49cd-86ca-aec2b4f3cd2c|e388b9b2-5838-45db-8a17-b6aafe5e3f12|In3.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|163725000|76750000|556cc519-f8ef-44d3-8ae0-85881e6f70a8|d261c215-57bd-43ee-aaa2-406327a7019f|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|166205000|80100000|556cc519-f8ef-44d3-8ae0-85881e6f70a8|91d4e79e-dc5b-4d4d-bc97-8097dfedf828|F.Cu",
           ""
         ]
       ],
