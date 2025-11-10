@@ -728,7 +728,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "CameraPCB.net",
-      "plot": "./",
+      "plot": "fab/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
