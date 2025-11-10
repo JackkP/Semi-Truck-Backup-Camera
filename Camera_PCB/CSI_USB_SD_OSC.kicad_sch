@@ -5662,7 +5662,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.te.com/usa-en/product-1-84952-5.datasheet.pdf"
 			(at 182.88 62.23 0)
 			(effects
 				(font
@@ -5671,7 +5671,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connectable mounting pin connector, single row, 01x15, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "15 Position FPC Connector Contacts, Bottom 0.039\" (1.00mm) Surface Mount, Right Angle"
 			(at 182.88 62.23 0)
 			(effects
 				(font
